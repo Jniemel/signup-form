@@ -3,13 +3,18 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    font-family: "PT Sans", Arial, Helvetica, sans-serif, Tahoma, sans-serif;    
+    font-family: Tahoma, Verdana, sans-serif;   
 }
 
 @font-face {
     font-family: MarckScript;
     src: url(fonts/MarckScript-Regular.ttf);
   }
+
+@font-face {
+    font-family: Mono;
+    src: url(fonts/UbuntuMono-Regular.ttf);
+}
 
 p {
     margin: 5px;
@@ -34,14 +39,6 @@ a {
 .grad-right {
     background: linear-gradient(to left, #010113 0%, #2b3675 100%);
     
-}
-
-#form-base {
-    background: linear-gradient(to right, #424242 0%, white 10%);
-    border-right: solid 3px #111844;
-    width: 35%;
-    display: flex;
-    flex-direction: row;
 }
 
 #side-img {
@@ -102,6 +99,65 @@ a {
 #cred-3 {
     bottom: 40px;
 }
+
+
+#disclaimer {    
+    color: red;
+    font-size: 9px;   
+    align-self: flex-start;  
+}
+
+#form-base {
+    background: linear-gradient(to right, #424242 0%, white 10%);
+    border-right: solid 3px #111844;
+    width: 35%;
+    display: flex;
+    flex-direction: column;    
+    position: relative;
+    padding-left: 70px;
+}
+
+
+.form-text {
+    font-family: mono;
+    font-weight: 600;
+    font-size: 2rem;    
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+#signup {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: start;
+    max-height: 10px;
+    font-family: mono;
+    font-size: 1rem;    
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-right: 35px;
+}
+
+.field label {
+    margin-bottom: 6px;
+}
+
+
+#cred-4 {
+    position: absolute;
+    color: black;
+    font-size: 12px;
+    margin: 0;
+    bottom: 8px;
+    left: 70px;  
+}
+
 
 #footer {
     display: flex;
