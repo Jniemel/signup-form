@@ -1,9 +1,13 @@
 body {
     height: 100vh;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    font-family: Tahoma, Verdana, sans-serif;   
+    display: flex;    
+    flex-direction: column;         
+    font-family: Tahoma, Verdana, sans-serif;      
+}
+
+html {
+    font-size: 16px;
 }
 
 @font-face {
@@ -25,7 +29,8 @@ a {
 }
 
 #main-container {
-    display: flex;    
+    flex-grow: 1;      
+    display: flex;          
 }
 
 .side-bar {
@@ -41,101 +46,102 @@ a {
     
 }
 
-#side-img {
-    width: 100%;
-    height: 100%;
-}
-
-#img-container {
+#main-img-container {    
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 35%;      
+    width: 35%;         
 }
 
+#main-img {
+    flex-grow: 1;
+    width: 100%;    
+}
 
 #text-ribbon {
-    background-color: black;
-    opacity: 70%;      
-    height: 150px;
+    background-color: rgba(0,0,0,0.5);         
+    height: 18%;
     width: 100%;
-    position: absolute;
-    top: 200px;
+    position: absolute;    
+    top: 21%;
     display: flex;    
     justify-content: center;
-    align-items: center;        
-}
-
-#rocket {
-    height: 100%;
-    opacity: 100%;
-    margin: 0;   
+    align-items: center;      
 }
 
 #text-ribbon p {
-    color: white;
-    opacity: 100%;
-    font-size: 48px;
-    font-weight: 400;
+    color: white;       
     margin-left: 0px;
     font-family: MarckScript;
 }
 
-#cred-1,
-#cred-2,
-#cred-3 {
-    position: absolute;
+#logo {    
+    height: 100%;    
+    margin: 0;   
+}
+
+#logo-text {
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
     color: white;
-    font-size: 12px;
     margin: 0;
-    bottom: 8px;
-    left: 15px;    
-}
-
-#cred-2 {
-    bottom: 24px;
-}
-
-#cred-3 {
-    bottom: 40px;
+    padding: 0;
 }
 
 
-#disclaimer {    
-    color: red;
-    font-size: 9px;   
-    align-self: flex-start;  
+#cred-left {        
+    height: 4%;
+    width: 100%;
+    position: absolute;
+    bottom: 1.5%;
+    left: 1%;
+    font-size: 0.75vw;
+           
 }
 
-#form-base {
-    background: linear-gradient(to right, #424242 0%, white 10%);
-    border-right: solid 3px #111844;
-    width: 35%;
-    display: flex;
-    flex-direction: column;    
-    position: relative;
-    padding-left: 70px;
+#cred-left ul {
+    color: white;
 }
 
 
 .form-text {
     font-family: mono;
     font-weight: 600;
-    font-size: 2rem;    
-    margin-right: 25px;
-    margin-top: 25px;
+    font-size: 2.5vw;    
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+#disclaimer {    
+    color: red;
+    font-size: 0.5vw;   
+    align-self: flex-start;  
+}
+
+#signUp-container {
+    background: linear-gradient(to right, #424242 0%, white 10%);
+    border-right: solid 3px #111844;
+    width: 35%;
+    display: flex;
+    flex-direction: column;   
+    padding-left: 5%;
 }
 
 #signup {
-    margin-top: 90px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 40px;
-    align-items: start;
-    max-height: 10px;
+    margin-top: 8%;        
     font-family: mono;
-    font-size: 1rem;    
+    overflow: auto;
+}
+
+
+.field-row {
+    display: flex;
+    gap: 10%;
+    margin-bottom: 6%;
 }
 
 .field {
@@ -145,29 +151,33 @@ a {
 }
 
 .field label {
-    margin-bottom: 6px;
+    margin-bottom: 0.33rem;
 }
 
+#cred-right {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: row;     
+    height: 4%;
+    width: 100%;    
+    font-size: 0.75vw;
+}
 
-#cred-4 {
-    position: absolute;
+#cred-right ul {
+    align-self: flex-end;
     color: black;
-    font-size: 12px;
-    margin: 0;
-    bottom: 8px;
-    left: 70px;  
+    margin-bottom: 0.5%;
 }
 
-
-#footer {
+#footer {           
     display: flex;
     flex-direction: column;    
     background-color: rgb(6, 2, 63);    
-    border: solid 1px rgb(2, 26, 34);
+    border: solid 2px rgb(2, 26, 34);
     color: white;
     font-weight: 700;
-    font-size: 12px;    
-    padding-left: 5px;
+    font-size: 0.75rem;
+    min-height: 2%;   
 }
 
     

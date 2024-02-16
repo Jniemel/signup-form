@@ -9,40 +9,55 @@
 <body>
     <div id="main-container">        
         <div class="side-bar grad-left"></div>
-        <div id="img-container">   
-            <img id="side-img" src="images/planets.png" alt="planets">
+        <div id="main-img-container">   
+            <img id="main-img" src="images/planets.png" alt="planets">
             <div id="text-ribbon">
-                <img id="rocket" src="images/rocket_white.png" alt="rocket">
-                <p>Galactico</p>
+                <img id="logo" src="images/rocket_white.png" alt="rocket">
+                <div id="logo-text">
+                    <p>Galactik</p>
+                </div>                
             </div>
-            <p id="cred-1">Planets by <a href="https://pixabay.com/users/pizar_heryanto-12044322/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8215532">pizar almaulidina</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8215532">Pixabay</a></p>
-            <p id="cred-2">Spaceship by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1976107">Jan</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1976107">Pixabay</a></p>
-            <p id="cred-3">Font used in "Galactico" designed by Denis Masharov</p>
+            <div id="cred-left">
+                <ul>
+                    <li>Planets by <a href="https://pixabay.com/users/pizar_heryanto-12044322/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8215532">pizar almaulidina</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8215532">Pixabay</a></li>
+                    <li>Spaceship by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1976107">Jan</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1976107">Pixabay</a></li>
+                    <li>Font used in "Galactik" designed by Denis Masharov</li>
+                </ul>                
+            </div>
         </div>
-        <div id="form-base">
-            <p class="form-text">Do you want to win a free trip to Mars? Then sign up now, and try your luck!</p>
-            <p id="disclaimer">Galactico cannot guarantee passenger safety and will not be liable for any harm and/or fatalities caused by spacetravel.</p>    
-            <form action="#">
-                <div id="signup">
-                    <div class="field">
-                        <label for="username">Username:</label>
-                        <input type="text" id="username">
+        <div id="signUp-container">
+            <p class="form-text">Sign up for intergalactic travel!</p>
+            <p id="disclaimer">Galactik cannot guarantee passenger safety and will not be liable for any harm and/or fatalities caused by spacetravel.</p>    
+            <div id="signup">
+                <form action="#">
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="username">Username:</label>
+                            <input type="text" id="SU-username" name="SU-username" placeholder="User">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email:</label>
+                            <input type="text" id="SU-email" name="SU-email" placeholder="email@example.com">
+                        </div>
+                    </div>                
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="password">Password:</label>
+                            <input type="password" id="SU-password" name="SU-password" placeholder="Enter password">
+                        </div>
+                        <div class="field">
+                            <label for="passCon">Confirm password:</label>
+                            <input type="passCon" id="SU-Conf" name="SU-Conf" placeholder="Re-enter password">
+                        </div>
                     </div>
-                    <div class="field">
-                        <label for="email">Email:</label>
-                        <input type="text" id="email">
-                    </div>
-                    <div class="field">
-                        <label for="password">Password:</label>
-                        <input type="password" id="password">
-                    </div>
-                    <div class="field">
-                        <label for="passCon">Confirm password:</label>
-                        <input type="passCon" id="passCon">
-                    </div>
-                </div>   
-            </form>
-            <p id="cred-4">Font used in this part designed by Dalton Maag</p>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>          
+            <div id="cred-right">
+                <ul>
+                    <li>Font used in this part designed by Dalton Maag</li>
+                </ul>
+            </div>            
         </div>
         <div class="side-bar grad-right"></div>
     </div>
